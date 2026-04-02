@@ -1,0 +1,42 @@
+<div class="task-app-layout">
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <div class="logo-icon">✓</div>
+        <span class="logo-text">TaskMaster</span>
+      </div>
+      
+      <ul class="nav-links">
+        <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
+        <li><a routerLink="/completed" routerLinkActive="active">Completed</a></li>
+        <li><a routerLink="/motivation" routerLinkActive="active">Motivation</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+      </ul>
+
+      <div class="user-actions">
+        <!-- <button class="btn-primary">New Task +</button> -->
+        <div class="avatar-circle">U</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Area with RouterOutlet -->
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>&copy; 2026 TaskMaster App. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Support</a>
+      </div>
+    </div>
+  </footer>
+</div>
